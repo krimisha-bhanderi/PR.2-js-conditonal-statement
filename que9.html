@@ -1,0 +1,75 @@
+<!-- Write a JavaScript program to find max of 4 number using nested if. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        var a = parseInt(prompt("Enter the value of a:-"));
+        var b = parseInt(prompt("Enter the value of b:-"));
+        var c = parseInt(prompt("Enter the value of c:-"));
+        var d = parseInt(prompt("Enter the value of d:-"));
+    
+        if(a > b)
+        {
+            if(a > c)
+            {
+                if(a > d)
+                {
+                    document.write("<h1>A is maximum...</h1>");
+                }
+                else
+                {
+                    document.write("<h1>D is maximum...</h1>");
+                }
+            }
+            else
+            {
+                if(c > d)
+                {
+                    document.write("<h1>C is maximum...</h1>");
+                }
+                else
+                {
+                    document.write("<h1>D is maximum...</h1>");
+                }
+            }
+        }
+        else
+        {
+            if(b > c)
+            {
+                if(b > d)
+                {
+                    document.write("<h1>B is maximum...</h1>");
+                }
+                else
+                {
+                    document.write("<h1>D is maximum...</h1>");
+                }
+            }
+            else
+            {
+
+                if(c > d)
+                {
+                    document.write("<h1>C is maximum...</h1>");
+                }
+                else
+                {
+                    document.write("<h1>D is maximum...</h1>");
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

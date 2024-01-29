@@ -1,0 +1,45 @@
+ <!-- Write a JavaScript program to create basic calculator using switch case. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script type="text/Javascript">
+
+    var a = parseInt(prompt("Enter the value of a :- "));
+    var b = parseInt(prompt("Enter the value of b :- "));
+
+    var choice = prompt("Enter choice + , - , * , /");
+
+    switch (choice) 
+    {
+         case '+':
+                 document.write(`<h1>sum : ${a}+${b}=${a+b}`);
+                 break;
+
+         case '-':
+                 document.write(`<h1>subtracton : ${a}-${b}=${a-b}`);
+                 break;
+
+         case '*':
+                document.write(`<h1>product : ${a}*${b}=${a*b}`);
+                break;
+
+         case '/':
+                document.write(`<h1>division : ${a}/${b}=${a/b}`);
+                break;
+
+        default:
+                document.write("<h1>invalid sign...!");
+                break;
+    }
+</script>
+    
+
+</body>
+</html>

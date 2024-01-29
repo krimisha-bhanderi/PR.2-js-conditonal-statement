@@ -1,0 +1,54 @@
+<!-- .Write a Javascript program to input marks of five subjects Physics, Chemistry, 
+    Biology, Mathematics and Computer. Calculate percentage and grade according to 
+    following -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        var physics = parseInt(prompt("Enter the marks obtained in physics"));
+        var chemistry = parseInt(prompt("Enter the marks obtained in chem"));
+        var biology = parseInt(prompt("Enter the marks obtained in biology"));
+        var maths = parseInt(prompt("Enter the marks obtained in maths"));
+        var computer = parseInt(prompt("Enter the marks obtained in computer"));
+
+        var percentage = (physics + chemistry + biology + maths + computer)*100/500;
+
+        document.write(`<h1>your percentage is = ${percentage}</h1>`);
+
+        if(percentage >= 90)
+        {
+            document.write("<h1>A grade...!</h1>");
+        }
+        else if(percentage >= 80  &&  percentage <= 90)
+        {
+            document.write("<h1>B grade...!!</h1>");
+        }
+        else if(percentage >= 70  &&  percentage <= 80)
+        {
+            document.write("<h1>C grade...!</h1>");
+        }
+        else if(percentage >= 60  &&  percentage <= 70)
+        {
+            document.write("<h1>D grade...!</h1>");
+        }
+        else if(percentage >= 50  &&  percentage <= 60)
+        {
+            document.write("<h1>E grade...!</h1>");
+        }
+        else
+        {
+            document.write("<h1>BEST OF LUCK FOR NEXT TIME.....!!</h1>");
+        }
+
+
+    </script>
+</body>
+</html>
